@@ -46,13 +46,7 @@ public void addProductToCart(String productName)
 	waitForElementToAppear(addToCart);
 	
 }
-/**public void addProductToCart1(String productName)
-{
-	WebElement prod = getProductByName(productName);
-	prod.findElement(addToCart).click();
-	waitForElementToAppear(addToCart);
-	
-}**/
+
 
 }
 
