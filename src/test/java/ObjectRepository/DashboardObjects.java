@@ -46,6 +46,24 @@ public void addProductToCart(String productName)
 	waitForElementToAppear(addToCart);
 	
 }
+public WebElement getProductByName7(String productName)
+{
+	WebElement prod = getProductList().stream().filter(product->
+	product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
+	return prod ;
+}
+public WebElement getProductByName1(String productName)
+	{
+		WebElement prod = getProductList().stream().filter(product->
+		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
+		return prod ;
+	}
+		public WebElement getProductByName3(String productName)
+		{
+			WebElement prod = getProductList().stream().filter(product->
+			product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
+			return prod ;
+		}
 
 
 }
