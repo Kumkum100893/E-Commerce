@@ -6,6 +6,10 @@ public class Cart
 	{
 		System.out.println("Testing");
 	}
+	public void sum()
+	{
+		System.out.println(7);
+	}
 	
 	
 
